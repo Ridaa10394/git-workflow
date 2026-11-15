@@ -1,0 +1,79 @@
+GIT COMMANDS USED IN THIS ASSIGNMENT
+=====================================
+
+1. git init -b main
+   Initializes a new local Git repository in the project folder, with "main" as the default branch.
+
+2. git config user.name "Ridaa Mirza"
+   Sets the author name to attach to commits made in this repository.
+
+3. git config user.email "ridaa.mirza@scalerailabs.com"
+   Sets the author email to attach to commits made in this repository.
+
+4. git add index.html about.html
+   Stages the specified files, moving them from the working directory into the staging area for the next commit.
+
+5. git commit -m "Initial commit: add index.html and about.html"
+   Records the staged changes as the first commit in the project history.
+
+6. git add about.html
+   Stages the modified about.html file after adding a description line.
+
+7. git commit -m "Update about.html with assignment description"
+   Creates a second commit recording the change to about.html.
+
+8. git branch feature
+   Creates a new branch named "feature" that points to the current commit.
+
+9. git checkout feature
+   Switches the working directory to the "feature" branch.
+
+10. git add index.html
+    Stages the index.html file after adding a new feature section on the feature branch.
+
+11. git commit -m "Add new feature section to index.html on feature branch"
+    Commits the new feature-section change on the feature branch.
+
+12. git log --oneline --all --graph
+    Displays a compact, graphical commit history across all branches, useful for visualizing branching.
+
+13. git checkout main
+    Switches back to the main branch.
+
+14. git merge --no-ff feature -m "Merge feature branch into main"
+    Merges the feature branch into main, forcing a merge commit (--no-ff) so the branch history
+    remains visible in the log instead of being fast-forwarded away.
+
+15. git reset --hard 8fd6a85
+    (Used once, to correct an earlier fast-forward merge.) Moves the current branch pointer back
+    to a specific prior commit and discards any changes, so the merge could be redone as a true
+    merge commit for clearer history.
+
+16. git status
+    Shows the current state of the working directory and staging area (tracked/untracked/ignored files).
+
+17. git add .gitignore
+    Stages the newly created .gitignore file.
+
+18. git commit -m "Add .gitignore to ignore log files and temp folder"
+    Commits the .gitignore file so Git begins ignoring *.log files and the temp/ folder.
+
+19. git add about.html (second time)
+    Stages a further change to about.html (an intentionally "wrong" line to later undo).
+
+20. git commit -m "Add extra line to about.html (to be undone)"
+    Commits the mistaken change, creating a commit that will be undone in the next step.
+
+21. git reset --hard HEAD~1
+    Undoes the last commit completely: moves the branch pointer back one commit and discards
+    the associated changes in the working directory, restoring the project to its prior state.
+
+22. git remote add origin <GitHub-repo-URL>
+    Links the local repository to the empty public repository created on GitHub.
+
+23. git push -u origin main
+    Pushes the local "main" branch (and its full commit history) to GitHub, and sets it to track
+    the remote branch for future pushes/pulls.
+
+24. git push origin feature
+    Pushes the "feature" branch to GitHub as well, so the branch activity is visible remotely.
