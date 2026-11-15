@@ -68,7 +68,7 @@ GIT COMMANDS USED IN THIS ASSIGNMENT
     Undoes the last commit completely: moves the branch pointer back one commit and discards
     the associated changes in the working directory, restoring the project to its prior state.
 
-22. git remote add origin <GitHub-repo-URL>
+22. git remote add origin https://github.com/Ridaa10394/git-workflow.git
     Links the local repository to the empty public repository created on GitHub.
 
 23. git push -u origin main
@@ -77,3 +77,5 @@ GIT COMMANDS USED IN THIS ASSIGNMENT
 
 24. git push origin feature
     Pushes the "feature" branch to GitHub as well, so the branch activity is visible remotely.
+
+GitHub repository URL: https://github.com/Ridaa10394/git-workflow
